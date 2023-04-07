@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buvette Este</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .acc{
+            background-image: url(bgpro.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Buvette</a>
+        <ul class="navbar-menu">
+          <li><a href="projetweb.html">Home</a></li>
+          <li><a href="#heading">Menu</a></li>
+          <!--<li><a href="#">About Us</a></li>-->
+          <li><a href="https://www.instagram.com/buvette.este/">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="acc">
+        <button  class="button" type="button"><a href="#heading"></a> Let's see the Menu</button>
+      </div> <br><br>
+      <div id="menu">
+        <div id="heading" class="heading">
+            <h1>Menu</h1>
+            <h3>Today's Special</h3>
+        </div>
+        <div class="card">
+            <img
+                src="image2.png">
+            <div class="details">
+                <div class="details-sub">
+                    <h5 id="txt">Msemen, Thea.</h5>
+                    <h5 class="price"> 5DH </h5>
+                </div>
+                <p>ALL Student need that plate because delicious and not expensive.</p>
+                <button id="btn" type="button">Buy it</button>
+            </div>
+        </div>
+        <div class="card">
+          <img
+              src="bgpro2.png">
+          <div class="details">
+              <div class="details-sub">
+                  <h5 id="txt">Caffe.Noir</h5>
+                  <h5 class="price"> 5DH </h5>
+              </div>
+              <p>Pour nombre de personnes, boire du café noir est, comme on dit, un supplice.
+                .</p>
+              <button id="btn" type="button">Buy it</button>
+          </div>
+      </div>
+      <div class="card">
+        <img
+            src="image3.png">
+        <div class="details">
+            <div class="details-sub">
+                <h5 id="txt">Mojito.Cold</h5>
+                <h5 class="price"> 15DH </h5>
+            </div>
+            <p>Melange d'un sprite et Mint et Citron .</p>
+            <button id="btn" type="button">Buy it</button>
+        </div>
+    </div>
+    <div class="card">
+      <img
+          src="image4.jpeg">
+      <div class="details">
+          <div class="details-sub">
+              <h5 id="txt">Tacos</h5>
+              <h5 class="price"> 30DH </h5>
+          </div>
+          <p>Un taco est un antojito  de la cuisine mexicaine .</p>
+          <button id="btn" type="button">Buy it</button>
+      </div>
+  </div>
+  <div class="card">
+    <img
+        src="image5.jpeg">
+    <div class="details">
+        <div class="details-sub">
+            <h5 id="txt">Tajine.Maroc</h5>
+            <h5 class="price"> 50DH </h5>
+        </div>
+        <p>Le tajine est un plat mystérieux qui combine subtilement les épices orientales.</p>
+        <button id="btn" type="button">Buy it</button>
+    </div>
+</div>
+<div class="card">
+  <img
+      src="image6.jpeg">
+  <div class="details">
+      <div class="details-sub">
+          <h5 id="txt">Couscous.Maroc</h5>
+          <h5 class="price"> 120DH </h5>
+      </div>
+      <p>Le couscous marocain est une spécialité culinaire du Maghreb.</p>
+      <button id="btn" type="button">Buy it</button>
+  </div>
+</div>
+<div class="card">
+    <img
+        src="image7.jpeg">
+    <div class="details">
+        <div class="details-sub">
+            <h5 id="txt">Omlete</h5>
+            <h5 class="price"> 7DH </h5>
+        </div>
+       
+        <button id="btn" type="button">Buy it</button>
+    </div>
+</div>
+<div class="card">
+  <img
+      src="image8.jpeg">
+  <div class="details">
+      <div class="details-sub">
+          <h5 id="txt">Croissant</h5>
+          <h5 class="price"> 3DH </h5>
+      </div>
+     
+      <button id="btn" type="button">Buy it</button>
+  </div>
+</div>
+<div class="card">
+<img
+    src="image9.jpeg">
+<div class="details">
+    <div class="details-sub">
+        <h5 id="txt">Boissans</h5>
+        <h5 class="price"> 4DH </h5>
+    </div>
+    
+    <button id="btn" type="button">Buy it</button>
+</div>
+</div>
+<ul id="ul">
+<button id="buttonS" type="submit"><a href="paiement.html">BUY</a> </button>
+</ul>
+<script> 
+
+  let buttons = document.querySelectorAll("#menu .card button");
+  let ul = document.getElementById("ul");
+  let selectedItems = [];
+
+  buttons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      let itemName = button.parentElement.querySelector("#txt").textContent;
+      selectedItems.push(itemName);
+      let li = document.createElement('li');
+      li.textContent = itemName;
+      ul.appendChild(li);
+    });
+  });
+// scripts.js
+document.getElementById("loginBtn").addEventListener("mouseover", function() {
+	this.style.backgroundColor = "#0056b3";
+});
+
+document.getElementById("loginBtn").addEventListener("mouseout", function() {
+	this.style.backgroundColor = "#007bff";
+});
+
+</script>
+
+
+      
+</body>
+</html>

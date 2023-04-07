@@ -1,0 +1,84 @@
+body {
+	font-family: Arial, sans-serif;
+	background-image: url(bg2.jpg);
+    background-repeat: no-repeat;
+    *background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.login-box {
+	background-color: #fff;
+	width: 350px;
+	padding: 20px;
+	margin: 50px auto;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #000000;
+    transform: translate(-90%,45%);
+}
+
+h1 {
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0px 0px 5px #ccc;
+	margin-bottom: 20px;
+}
+
+#button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	position: relative;
+	margin-left: 38%;
+}
+
+#button:hover {
+	background-color: #3e8e41;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  color: rgb(29, 28, 28);
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  transform: translate(110%,-70%);
+}
+
+.card h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
