@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -162,11 +163,10 @@
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: #6f6f6f;
-  transform: translate(100%,0%);
+  transform: translate(115%,40%);
 }
 
 #ul li {
-  margin-bottom: 10px;
   font-size: 16px;
   font-weight: bold;
   color: #333;
@@ -183,4 +183,46 @@
   color: black;
   border-radius: 50px;
   font-family: fantasy;
+}
+.footer .box-container{
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap:1.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  transform: translate(45%,0%);
+}
+
+.footer .box-container .box{
+  text-align: center;
+  padding:2rem;
+  border:var(--border);
+}
+
+.footer .box-container .box img{
+  height: 10rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.footer .box-container .box h3{
+  margin:1rem 0;
+  font-size: 1rem;
+  color:var(--black);
+}
+
+.footer .box-container .box a,
+.footer .box-container .box p{
+  line-height: 2;
+  font-size: 1.5rem;
+  color:var(--light-color);
+  display: flex;
+}
+
+.footer .credit{
+  text-align: center;
+  padding:1rem 2rem;
+  font-size: 1.5rem;
+  color:var(--white); 
+transform: translate(115%,-10%);
 }

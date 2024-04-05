@@ -20,14 +20,14 @@
     <nav class="navbar">
         <a href="#" class="navbar-logo">Buvette</a>
         <ul class="navbar-menu">
-          <li><a href="projetweb.html">Home</a></li>
+          <li><a href="about.html">Home</a></li>
           <li><a href="#heading">Menu</a></li>
           <!--<li><a href="#">About Us</a></li>-->
-          <li><a href="https://www.instagram.com/buvette.este/">Contact Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
       <div class="acc">
-        <button  class="button" type="button"><a href="#heading"></a> Let's see the Menu</button>
+       <a href="about.html"> <button  class="button" type="submit"> WHY CHOSE US</button></a>
       </div> <br><br>
       <div id="menu">
         <div id="heading" class="heading">
@@ -142,10 +142,48 @@
     
     <button id="btn" type="button">Buy it</button>
 </div>
-</div>
-<ul id="ul">
-<button id="buttonS" type="submit"><a href="paiement.html">BUY</a> </button>
-</ul>
+
+</div> 
+<footer class="footer">
+
+    <section class="box-container">
+ 
+       <div class="box">
+          <img src="email-icon.png" alt="">
+          <h3>our email</h3>
+          <a href="#">ESTE.uca.ac.ma</a>
+       </div>
+ 
+       <div class="box">
+          <img src="clock-icon.png" alt="">
+          <h3>opening hours</h3>
+          <p>08:30am to 18:00pm </p>
+       </div>
+ 
+       <div class="box">
+          <img src="map-icon.png" alt="">
+          <h3>our address</h3>
+          <a href="https://www.google.com/maps">Essaouira Ghazoua Este </a>
+       </div>
+ 
+       <div class="box">
+          <img src="phone-icon.png" alt="">
+          <h3>our number</h3>
+          <a href="">0500000000</a>
+          <a href="">0622223333</a>
+       </div>
+ 
+    </section>
+    <div id="pro">
+        <ul name="ul" id="ul"> 
+        <button id="buttonS" type="submit"><a href="paiement.html">BUY</a> </button>
+        </ul></div> <br><br>
+ 
+    <div class="credit">&copy; copyright @ 2023 by mr. Mohamed Merouane </div>
+ 
+ </footer> <br>
+
+
 <script> 
 
   let buttons = document.querySelectorAll("#menu .card button");
@@ -159,6 +197,7 @@
       let li = document.createElement('li');
       li.textContent = itemName;
       ul.appendChild(li);
+      
     });
   });
 // scripts.js
